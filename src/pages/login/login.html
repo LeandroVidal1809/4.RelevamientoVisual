@@ -1,0 +1,20 @@
+<ion-list>
+  <h1> Bienvenido al Relevamiento Visual!</h1>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
+  <div padding>
+    <button ion-button full outline  (click)="login()">Login</button>
+     <button ion-button full outline  (click)="Registrarse()">Registrarse</button>
+    <button ion-button round outline (click)="UserValido()">UseValid</button>
+  </div>
+
