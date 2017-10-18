@@ -12,6 +12,19 @@
   
   </ion-list>
   
+  <ion-list>
+    <ion-item>
+      <ion-label>Seleccione un usuario...</ion-label>
+      <ion-select [(ngModel)]="tipoUser" (ionChange)="UserValido()">
+        <ion-option value="usuario">Usuario</ion-option>
+        <ion-option value="admin">Administrador</ion-option>
+        <ion-option value="invitado">Invitado</ion-option>
+        <ion-option value="jugador1">Jugador 1</ion-option>
+        <ion-option value="jugador2">Jugador 2</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
   <div padding>
     <button ion-button full outline  (click)="login()">Login</button>
      <button ion-button full outline  (click)="Registrarse()">Registrarse</button>
